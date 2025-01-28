@@ -1,7 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 15px 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p> LALALALALALLL</p>
+    <header>
+        <h1>John Doe Photography</h1>
+        <p>Capturing Moments, Telling Stories</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <div style="text-align: center; padding: 40px 20px;">
+            <h2>About Me</h2>
+            <p>Hi! I'm John Doe, a passionate photographer with a love for capturing the beauty in the world around us. I specialize in landscape and portrait photography, and I strive to tell stories through my lens.</p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="gallery">
+        <h2 style="text-align: center; padding: 20px 0;">Portfolio</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/600x400" alt="Portfolio Image 1">
+            <img src="https://via.placeholder.com/600x400" alt="Portfolio Image 2">
+            <img src="https://via.placeholder.com/600x400" alt="Portfolio Image 3">
+            <img src="https://via.placeholder.com/600x400" alt="Portfolio Image 4">
+            <img src="https://via.placeholder.com/600x400" alt="Portfolio Image 5">
+            <img src="https://via.placeholder.com/600x400" alt="Portfolio Image 6">
+        </div>
+    </section>
+
+    <section id="contact" style="background-color: #333; color: #fff; padding: 40px 20px;">
+        <div style="text-align: center;">
+            <h2>Contact</h2>
+            <p>If you'd like to work with me or have any questions, feel free to reach out!</p>
+            <p>Email: john.doe@email.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 John Doe Photography</p>
+    </footer>
 </body>
 </html>
