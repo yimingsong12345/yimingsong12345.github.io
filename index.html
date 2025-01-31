@@ -1,234 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>John Doe Photography</title>
-  
-  <!-- External fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-  
-  <!-- CSS link (if external) or internal styles will go here -->
-  <style>
-    /* Global Styles */
-    body {
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-      color: #333;
-      scroll-behavior: smooth; /* For smooth scrolling */
-    }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photography Portfolio</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
     
-    h1, h2 {
-      font-family: 'Poppins', sans-serif;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    
-    /* Header */
-    header {
-      background-color: #111;
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 999;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header nav {
-      margin-top: 15px;
-    }
-    header nav a {
-      margin: 0 20px;
-      color: white;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: color 0.3s;
-    }
-    header nav a:hover {
-      color: #a6a6a6;
-    }
-    
-    /* Main Content */
-    main {
-      padding-top: 150px; /* Offset for fixed header */
-    }
-    
-    /* Portfolio Grid */
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
-    }
-    .portfolio-item {
-      position: relative;
-      overflow: hidden;
-      border-radius: 8px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-    .portfolio-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.4s ease;
-    }
-    .portfolio-item:hover img {
-      transform: scale(1.1);
-    }
-
-    /* About Section */
-    .about {
-      padding: 60px 20px;
-      text-align: center;
-      background-color: #f7f7f7;
-    }
-    .about h2 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-    }
-    .about p {
-      font-size: 1rem;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    
-    /* Contact Section */
-    .contact {
-      padding: 60px 20px;
-      background-color: #fff;
-      text-align: center;
-    }
-    .contact h2 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-    }
-    .contact form {
-      max-width: 500px;
-      margin: 0 auto;
-      display: grid;
-      gap: 20px;
-    }
-    .contact input, .contact textarea {
-      padding: 15px;
-      font-size: 1rem;
-      width: 100%;
-      border-radius: 5px;
-      border: 1px solid #ddd;
-    }
-    .contact button {
-      background-color: #111;
-      color: white;
-      padding: 15px;
-      font-size: 1.1rem;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    .contact button:hover {
-      background-color: #555;
-    }
-    
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      background-color: #111;
-      color: white;
-    }
-  </style>
 </head>
 <body>
 
-<header>
-  <h1>John Doe Photography</h1>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<main>
-  <!-- Home Section -->
-  <section id="home" class="home">
-    <div style="position: relative;">
-      <img src="your-photo.jpg" alt="Hero Photo" style="width: 100%; height: 100vh; object-fit: cover;">
-      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
-        <h2>Capturing Moments</h2>
-        <p>Your Story Through My Lens</p>
-      </div>
+    <!-- Mobile Navigation -->
+    <div id="mobileNav">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="/">Mimbres River Valley</a></li>
+                <li><a href="/seascape">Seascape</a></li>
+                <li><a href="/portraits">Portraits</a></li>
+                <li><a href="/oaxaca">Oaxaca</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-  </section>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="portfolio">
-    <h2>Portfolio</h2>
-    <div class="portfolio-grid">
-      <div class="portfolio-item"><img src="photo1.jpg" alt="Portfolio 1"></div>
-      <div class="portfolio-item"><img src="photo2.jpg" alt="Portfolio 2"></div>
-      <div class="portfolio-item"><img src="photo3.jpg" alt="Portfolio 3"></div>
-      <!-- Add more images as needed -->
+    <!-- Main Content Wrapper -->
+    <div id="mainWrapper">
+
+        <!-- Header Section -->
+        <header id="header">
+            <div id="logo">
+                <h1 class="site-title">Photography Portfolio</h1>
+            </div>
+        </header>
+
+        <!-- Gallery Section -->
+        <div id="gallery">
+            <div class="gallery-category">
+                <h2>Mimbres River Valley</h2>
+                <div class="gallery-images">
+                    <!-- Example images, replace with your own -->
+                    <img src="image1.jpg" alt="Image 1">
+                    <img src="image2.jpg" alt="Image 2">
+                </div>
+            </div>
+            <div class="gallery-category">
+                <h2>Seascape</h2>
+                <div class="gallery-images">
+                    <img src="image3.jpg" alt="Image 3">
+                    <img src="image4.jpg" alt="Image 4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer id="footer">
+            <p>&copy; 2025 Photography Portfolio | All Rights Reserved</p>
+        </footer>
+
     </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>I'm John Doe, a passionate photographer based in New York City. My journey began over 10 years ago, and since then, I've been fortunate to capture moments that speak to the soul. I specialize in portrait, event, and landscape photography.</p>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Get in Touch</h2>
-    <form id="contact-form">
-      <input type="text" id="name" name="name" placeholder="Your Name" required>
-      <input type="email" id="email" name="email" placeholder="Your Email" required>
-      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-</main>
-
-<!-- Footer -->
-<footer>
-  <p>&copy; 2025 John Doe Photography</p>
-  <p><a href="https://instagram.com/johndoe" target="_blank" style="color: #fff;">Instagram</a> | <a href="https://twitter.com/johndoe" target="_blank" style="color: #fff;">Twitter</a></p>
-</footer>
-
-<!-- JS Scripts -->
-<script>
-  // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
-
-  // Contact form submission (mockup, no backend)
-  const form = document.getElementById('contact-form');
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    alert('Thank you for your message! I will get back to you shortly.');
-    form.reset(); // Reset the form after submission
-  });
-</script>
-
+    <script src="scripts.js"></script>
 </body>
 </html>
