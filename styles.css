@@ -136,6 +136,10 @@ ul {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Optional: Lightbox for Image Zoom */
 .lightbox {
   position: fixed;
