@@ -23,9 +23,10 @@ ul {
 }
 
 /* Header */
-#header {
-  text-align: center;
-  margin-bottom: 40px;
+#header .site-title {
+  font-size: 24px; /* Adjust the size to your preference */
+  text-align: left; /* Aligns text to the left */
+  margin: 0; /* Removes any margin around the header */
 }
 
 #logo {
